@@ -26,14 +26,6 @@ maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () =
         -91,
         -50
     ];
-  
-  function sumOfNumbers(arrayOfNumbers) {
-    var sum = 0;
-    for (let i = 0; i < numbers.length; i++){
-      sum += numbers[i]
-    }
-    return sum
-}
-    expect(sumOfNumbers(numbers)).toBe(75);
+  expect(sumOfNumbers(numbers)).toBe(75);
 });
 
