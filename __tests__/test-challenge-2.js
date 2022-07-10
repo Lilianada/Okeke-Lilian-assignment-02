@@ -26,5 +26,14 @@ maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in ar
         29,
         64
     ]
+  function countEvenNumbers(arrayOfNumbers) {
+        let evenNum = [];
+        for (let i = 0; i < numbers.length; i++){
+          if (numbers[i] % 2 === 0){
+            evenNum.push(numbers[i])
+          }
+        }
+        return evenNum.length
+    }
     expect(countEvenNumbers(numbers)).toBe(9);
 });

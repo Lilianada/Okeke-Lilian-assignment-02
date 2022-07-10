@@ -48,5 +48,12 @@ maybe('Challenge - 3 : my celsiusToFahrenheit function can convert an array of t
         35,
         24
     ];
-    expect(celsiusToFahrenheit(numbers)).toEqual(converted);
+  function celsiusToFahrenheit(arrayOfNumbers) {
+        var converted = [];
+        for (let i = 0; i < numbers.length; i++){
+        converted.push((numbers[i] * 1.8) + 32)
+            converted[i]=Math.trunc(converted[i])
+        }
+        return converted
+    } expect(celsiusToFahrenheit(numbers)).toEqual(converted);
 });
